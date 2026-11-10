@@ -1,0 +1,9 @@
+# Publica o servidor no Render (plano gratuito). Veja LEIA-ME.md.
+services:
+  - type: web
+    name: tg50-relay
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /saude
